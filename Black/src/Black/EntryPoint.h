@@ -3,10 +3,13 @@
 
 extern Black::Application* Black::CreateApplication();
 int main(int argc,char ** argv) {
-	printf("Start Engine!");
+	Black::Log::Init();
+	BK_CORE_WARN("Initialized Log!");
+	int a = 5;
+	BK_INFO("Hello! Var={0}", a);
 	auto app = Black::CreateApplication();
 	app->Run();
-	delete app;
+	delete app; 
 }
 
 
