@@ -1,25 +1,31 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="资源文件">
-      <UniqueIdentifier>{060267ab-7a1e-45cb-a5c1-8732d09c8ee4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{9a3b7fa4-54a5-4fe3-b8ee-94e0a7b92564}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件">
-      <UniqueIdentifier>{7838747b-a81b-4117-833c-8891352447a7}</UniqueIdentifier>
+    <Filter Include="Black">
+      <UniqueIdentifier>{2234E60C-8E48-0EBE-57CA-B11DC39D0AEF}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Black\Core.h" />
-    <ClInclude Include="src\Black\Application.h" />
     <ClInclude Include="src\Black.h" />
-    <ClInclude Include="src\Black\EntryPoint.h" />
-    <ClInclude Include="src\Black\Log.h" />
+    <ClInclude Include="src\Black\Application.h">
+      <Filter>Black</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Black\Core.h">
+      <Filter>Black</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Black\EntryPoint.h">
+      <Filter>Black</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Black\Log.h">
+      <Filter>Black</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Black\Application.cpp" />
-    <ClCompile Include="src\Black\Log.cpp" />
+    <ClCompile Include="src\Black\Application.cpp">
+      <Filter>Black</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Black\Log.cpp">
+      <Filter>Black</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

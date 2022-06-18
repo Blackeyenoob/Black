@@ -19,6 +19,8 @@ namespace Black {
 	};
 
 }
+//Engine log init macros
+#define BK_INIT ::Black::Log::Init()
 
 //Core log macros
 #define BK_CORE_TRACE(...)       ::Black::Log::GetCoreLogger()->trace(__VA_ARGS__)
@@ -33,3 +35,6 @@ namespace Black {
 #define BK_WARN(...)		  ::Black::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define BK_ERROR(...)		  ::Black::Log::GetClientLogger()->error(__VA_ARGS__)
 #define BK_FATAL(...)		  ::Black::Log::GetClientLogger()->fatal(__VA_ARGS__)
+
+
+
